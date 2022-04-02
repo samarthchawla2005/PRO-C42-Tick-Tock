@@ -16,8 +16,8 @@ function draw() {
   min = minute();
   sec = second();
 
-  scAngle = map(sc, 0, 60, 0, 360);
-  mnAngle = map(mn,0,60,0,360);
+  scAngle = map(sec, 0, 60, 0, 360);
+  mnAngle = map(min,0,60,0,360);
   hrAngle = map(hr % 12,0,12,0,360);
 
   push();
